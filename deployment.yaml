@@ -3,8 +3,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginxhello
-  name: nginxhello
+    app: nginxhello2
+  name: nginxhello2
   annotations:
     fluxcd.io/ignore: "false"
     fluxcd.io/automated: "false"
@@ -12,15 +12,15 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: nginxhello
+      app: nginxhello2
   template:
     metadata:
       labels:
-        app: nginxhello
+        app: nginxhello2
     spec:
       containers:
       - image: nbrown/nginxhello:1.19.0
-        name: nginxhello
+        name: nginxhello2
         ports:
         - containerPort: 80
         env:
