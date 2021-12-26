@@ -1,0 +1,1 @@
+{"jobID":"e5217a31-8760-000f-28aa-254990257804","spec":{"type":"policy","cause":{"Message":"","User":"javixeneize \u003cjavi.xeneize@gmail.com\u003e"},"spec":{"default:deployment/nginxhello":{"add":{"tag.nginxhello":"semver:~1.19.x"},"remove":{}}}},"result":null}
